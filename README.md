@@ -100,13 +100,19 @@ Run subsequent commands from the project root with this environment active. The 
 
 ### 4. Configure the EIA API key
 
-Only the crude oil extraction requires an API key. Create a file named `.env` in the project root, alongside `requirements.txt`, with:
+If you do not already have a `.env` file, copy the example in the project root. Use the command for your terminal:
 
-```dotenv
-EIA_API_KEY=replace_with_your_eia_api_key
+```powershell
+if (-not (Test-Path .env)) { Copy-Item .env.example .env }
 ```
 
-Obtain a key through the EIA Open Data service. Do not commit `.env` or share your key. The fuel price and exchange rate scripts use public APIs and do not require API keys.
+In Git Bash:
+
+```bash
+test -e .env || cp .env.example .env
+```
+
+Then edit `.env` and replace `replace_with_your_eia_api_key` with your EIA API key. If `.env` already exists, edit it instead of replacing it. Only the crude oil extraction requires an API key. The fuel price and exchange rate scripts use public APIs. Keep your real `.env` private; it is ignored by Git.
 
 ### 5. Extract the source data
 
@@ -142,13 +148,7 @@ Create or select a Google Cloud project, enable the BigQuery API, and authentica
 gcloud auth application-default login
 ```
 
-Create or update the project-root `.env` file:
-
-```dotenv
-EIA_API_KEY=replace_with_your_eia_api_key
-GCP_PROJECT_ID=malaysia-fuel-analytics
-GCP_LOCATION=asia-southeast1
-```
+In `.env`, replace `your-gcp-project-id` with your Google Cloud project ID. The example uses `asia-southeast1` for `GCP_LOCATION`; change it if your BigQuery datasets use another location.
 
 **Important:** the SQL files currently refer directly to the BigQuery project `malaysia-fuel-analytics`. Set `GCP_PROJECT_ID` to that project to use the SQL unchanged. If you use another project, update the project IDs in the SQL files under `sql/` as well. `GCP_LOCATION` defaults to `asia-southeast1`; use a location compatible with your project and datasets.
 
