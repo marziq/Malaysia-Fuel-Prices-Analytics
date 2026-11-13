@@ -1,0 +1,6 @@
+requests
+pandas
+pyarrow
+fastparquet
+python-dotenv
+google-cloud-bigquery
