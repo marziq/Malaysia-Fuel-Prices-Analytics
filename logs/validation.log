@@ -1,0 +1,60 @@
+2026-11-13 10:46:51,442 | INFO | 
+Starting multiple Parquet validation...
+2026-11-13 10:46:51,443 | INFO | ============================================================
+2026-11-13 10:46:51,443 | INFO | Starting validation: crude_oil.parquet
+2026-11-13 10:46:51,444 | INFO | File size: 151,449 bytes
+2026-11-13 10:46:51,444 | INFO | Total rows: 10292
+2026-11-13 10:46:51,508 | INFO | Freshness passed. Latest date: 2026-11-11, age: 2 days.
+2026-11-13 10:46:51,509 | INFO | VALIDATION PASSED: crude_oil.parquet
+2026-11-13 10:46:51,509 | INFO | ============================================================
+2026-11-13 10:46:51,509 | INFO | Starting validation: exchange_rates.parquet
+2026-11-13 10:46:51,510 | INFO | File size: 1,901 bytes
+2026-11-13 10:46:51,510 | INFO | Total rows: 1
+2026-11-13 10:46:51,518 | INFO | Freshness passed. Latest date: 2026-11-13, age: 0 days.
+2026-11-13 10:46:51,518 | INFO | VALIDATION PASSED: exchange_rates.parquet
+2026-11-13 10:46:51,518 | INFO | ============================================================
+2026-11-13 10:46:51,518 | INFO | Starting validation: fuel_prices.parquet
+2026-11-13 10:46:51,519 | INFO | File size: 3,020 bytes
+2026-11-13 10:46:51,519 | INFO | Total rows: 10
+2026-11-13 10:46:51,531 | ERROR | VALIDATION FAILED: fuel_prices.parquet
+2026-11-13 10:46:51,531 | ERROR | Dataset is outdated. Latest date: 2017-06-01, age: 3452 days, maximum allowed: 14 days.
+2026-11-13 10:46:51,539 | INFO | ============================================================
+2026-11-13 10:46:51,539 | INFO | PARQUET VALIDATION SUMMARY
+2026-11-13 10:46:51,539 | INFO | ============================================================
+2026-11-13 10:46:51,539 | INFO | Total files: 3
+2026-11-13 10:46:51,539 | INFO | Passed: 2
+2026-11-13 10:46:51,539 | INFO | Failed: 1
+2026-11-13 10:46:51,539 | INFO | Skipped: 0
+2026-11-13 10:46:51,540 | INFO | Validation report saved: C:\Users\User\Desktop\Malaysia Fuel Prices Analytics\data\raw\validation_report.csv
+2026-11-13 10:46:51,540 | INFO | Validation log saved: C:\Users\User\Desktop\Malaysia Fuel Prices Analytics\logs\validation.log
+2026-11-13 10:46:51,540 | ERROR | One or more Parquet files failed validation.
+2026-11-13 10:53:31,780 | INFO | 
+Starting multiple Parquet validation...
+2026-11-13 10:53:31,780 | INFO | ============================================================
+2026-11-13 10:53:31,780 | INFO | Starting validation: crude_oil.parquet
+2026-11-13 10:53:31,782 | INFO | File size: 151,449 bytes
+2026-11-13 10:53:31,782 | INFO | Total rows: 10292
+2026-11-13 10:53:31,843 | INFO | Freshness passed. Latest date: 2026-11-11, age: 2 days.
+2026-11-13 10:53:31,843 | INFO | VALIDATION PASSED: crude_oil.parquet
+2026-11-13 10:53:31,844 | INFO | ============================================================
+2026-11-13 10:53:31,844 | INFO | Starting validation: exchange_rates.parquet
+2026-11-13 10:53:31,844 | INFO | File size: 1,901 bytes
+2026-11-13 10:53:31,844 | INFO | Total rows: 1
+2026-11-13 10:53:31,849 | INFO | Freshness passed. Latest date: 2026-11-13, age: 0 days.
+2026-11-13 10:53:31,851 | INFO | VALIDATION PASSED: exchange_rates.parquet
+2026-11-13 10:53:31,851 | INFO | ============================================================
+2026-11-13 10:53:31,851 | INFO | Starting validation: fuel_prices.parquet
+2026-11-13 10:53:31,864 | INFO | File size: 8,945 bytes
+2026-11-13 10:53:31,864 | INFO | Total rows: 487
+2026-11-13 10:53:31,872 | INFO | Freshness passed. Latest date: 2026-11-12, age: 1 days.
+2026-11-13 10:53:31,872 | INFO | VALIDATION PASSED: fuel_prices.parquet
+2026-11-13 10:53:31,878 | INFO | ============================================================
+2026-11-13 10:53:31,878 | INFO | PARQUET VALIDATION SUMMARY
+2026-11-13 10:53:31,878 | INFO | ============================================================
+2026-11-13 10:53:31,879 | INFO | Total files: 3
+2026-11-13 10:53:31,879 | INFO | Passed: 3
+2026-11-13 10:53:31,879 | INFO | Failed: 0
+2026-11-13 10:53:31,881 | INFO | Skipped: 0
+2026-11-13 10:53:31,881 | INFO | Validation report saved: C:\Users\User\Desktop\Malaysia Fuel Prices Analytics\data\raw\validation_report.csv
+2026-11-13 10:53:31,881 | INFO | Validation log saved: C:\Users\User\Desktop\Malaysia Fuel Prices Analytics\logs\validation.log
+2026-11-13 10:53:31,881 | INFO | All Parquet files passed validation!
